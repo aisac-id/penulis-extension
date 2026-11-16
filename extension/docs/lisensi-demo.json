@@ -1,0 +1,12 @@
+{
+  "payload": {
+    "product": "kalam",
+    "edition": "pro",
+    "bundleId": "demo-repo",
+    "seats": 1,
+    "issuedTo": "penulis@example.com",
+    "issuedAt": "2026-11-16T00:00:00.000Z",
+    "expiry": "2027-11-16T00:00:00.000Z"
+  },
+  "signature": "EJG9zeVbmW6zDYFO2rIK7nbHawF5BpxKQAjCJd/CoBuvAoVBHDKSRkvcSWblj9U71pcz9zQWnwFOHoi5Nx1EDg=="
+}

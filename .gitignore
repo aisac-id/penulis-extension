@@ -1,0 +1,27 @@
+# Semua berkas rahasia dilarang masuk repo
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+lisensi-pribadi/
+
+# Artefak build / unduhan (dist/ ikut repo: paket siap load-unpacked)
+build/
+*.zip
+*.crx
+*.pem
+downloads/
+
+# Sistem & editor
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+
+# Uji sementara
+/tmp/
+.cache/

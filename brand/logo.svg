@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Logo Kalam">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4c5fd7"/><stop offset="0.55" stop-color="#1a2340"/><stop offset="1" stop-color="#080b16"/>
+    </linearGradient>
+    <radialGradient id="lamp" cx="0.28" cy="0.78" r="0.42">
+      <stop offset="0" stop-color="#f6a723" stop-opacity="0.65"/><stop offset="1" stop-color="#f6a723" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="feather" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd27a"/><stop offset="1" stop-color="#f6a723"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="110" fill="url(#bg)"/>
+  <rect width="512" height="512" rx="110" fill="url(#lamp)"/>
+  <path d="M392 104c-70 6-124 40-160 96-26 40-40 84-46 130 42-6 84-26 122-58 44-38 74-98 84-168z" fill="url(#feather)"/>
+  <path d="M392 104 180 336" stroke="#fff0cf" stroke-width="10" stroke-linecap="round" fill="none"/>
+  <g stroke="#ffe0a3" stroke-width="6" stroke-linecap="round" opacity="0.85">
+    <path d="M356 142 316 118"/><path d="M322 180 280 156"/><path d="M288 218 246 196"/><path d="M254 256 214 236"/><path d="M220 294 184 276"/>
+  </g>
+  <path d="M180 336 122 402" stroke="#eef1fb" stroke-width="14" stroke-linecap="round" fill="none"/>
+  <circle cx="118" cy="414" r="22" fill="#22d3ee"/>
+  <path d="M120 438h272" stroke="#eef1fb" stroke-opacity="0.45" stroke-width="10" stroke-linecap="round"/>
+</svg>

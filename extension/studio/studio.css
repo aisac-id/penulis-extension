@@ -1,0 +1,22 @@
+/* Kalam Studio — penyesuaian halaman tab penuh (di luar Shadow DOM). */
+html, body { height: 100%; }
+.studio-shell .kalam-root { border-radius: 0; }
+.studio-shell .kalam-root[data-mode="fullscreen"] .panel-host { padding-bottom: 46px; }
+.studio-note { bottom: 34px; left: 74px; }
+.studio-shell .top { padding-top: 10px; }
+.studio-body::-webkit-scrollbar { width: 10px; }
+.studio-body::-webkit-scrollbar-track { background: #0c1120; }
+.studio-body::-webkit-scrollbar-thumb { background: #243055; border-radius: 8px; }
+.studio-body::-webkit-scrollbar-thumb:hover { background: #4c5fd7; }
+
+@media (max-width: 720px) {
+  .studio-shell .kalam-root[data-mode="fullscreen"] .grid--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .studio-shell .kalam-root[data-mode="fullscreen"] .panel-host { padding: 12px; }
+  .studio-shell .kalam-root[data-mode="fullscreen"] .rail { width: 46px; }
+  .studio-note { display: none; }
+}
+@media (max-width: 460px) {
+  .studio-shell .kalam-root[data-mode="fullscreen"] .grid--2,
+  .studio-shell .kalam-root[data-mode="fullscreen"] .grid--3 { grid-template-columns: minmax(0, 1fr); }
+  .studio-shell .kalam-root[data-mode="fullscreen"] .cork__col { flex: 1 1 100%; }
+}

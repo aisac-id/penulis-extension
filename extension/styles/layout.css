@@ -1,0 +1,49 @@
+/* Kalam — layout host (sidebar menempel kanan),fullscreen,studio,dan responsif. */
+:host{
+all:initial;position:fixed!important;top:0;right:0;bottom:0;
+width:var(--kalam-w,25vw);min-width:280px;max-width:420px;z-index:2147483000;display:block;
+font-family:ui-sans-serif,system-ui,sans-serif;
+box-shadow:-18px 0 48px -24px #000000cc;border-left:1px solid #23305a;
+transition:width 240ms cubic-bezier(.22,.68,.24,1),transform 240ms cubic-bezier(.22,.68,.24,1);
+}
+:host([data-mode="rail"]){width:48px!important;min-width:48px;max-width:48px}
+:host([data-mode="fullscreen"]){width:100vw!important;max-width:none;min-width:0}
+:host([hidden]){display:none!important}
+/* Fullscreen: dua kolom supaya ruang lebar terpakai. */
+.kalam-root[data-mode="fullscreen"]{--pad:18px;font-size:14px}
+.kalam-root[data-mode="fullscreen"] .rail{width:60px}
+.kalam-root[data-mode="fullscreen"] .rail__b{width:52px;height:54px}
+.kalam-root[data-mode="fullscreen"] .rail__tip{font-size:8.5px;max-width:50px}
+.kalam-root[data-mode="fullscreen"] .panel-host{padding:18px 22px}
+.kalam-root[data-mode="fullscreen"] .panel{max-width:1180px;margin:0 auto;width:100%}
+.kalam-root[data-mode="fullscreen"] .panel--wide{max-width:none}
+.kalam-root[data-mode="fullscreen"] .split{display:grid;grid-template-columns:minmax(280px,360px) minmax(0,1fr);gap:14px;align-items:start}
+.kalam-root[data-mode="fullscreen"] .grid--2{grid-template-columns:repeat(4,minmax(0,1fr))}
+.kalam-root[data-mode="fullscreen"] .editor__area{min-height:58vh;max-height:none}
+.kalam-root[data-mode="fullscreen"] .chat{max-height:56vh}
+.kalam-root[data-mode="fullscreen"] .table-body{max-height:60vh}
+.kalam-root[data-mode="fullscreen"] .cork__col{flex:1 1 240px;max-height:68vh}
+.kalam-root[data-mode="fullscreen"] .drawer{width:min(560px,60%)}
+.split{display:flex;flex-direction:column;gap:12px;min-width:0}
+/* Sidebar sempit: satu kolom,kontrol turun ke baris sendiri. */
+.kalam-root[data-mode="sidebar"] .grid--3{grid-template-columns:repeat(2,minmax(0,1fr))}
+.kalam-root{container-type:inline-size;container-name:kalam}
+@container kalam (max-width:348px){
+.grid--2,.grid--3,.kalam-root[data-mode="fullscreen"] .grid--2{grid-template-columns:minmax(0,1fr)}
+.ctl{flex-wrap:wrap}
+.slider-wrap,.ctl>.input,.ctl>.select{width:100%;max-width:none}
+.sprint{flex-direction:column;align-items:stretch}
+.sprint__ring{margin:0 auto}
+}
+/* Studio (tab penuh,tanpa extension) */
+.studio-body{margin:0;height:100vh;background:#080b16;overflow:hidden}
+.studio-body[data-theme="light"]{background:#ece0cb}
+.studio-shell{height:100vh;display:flex;flex-direction:column}
+.studio-shell .kalam-root{flex:1;min-height:0}
+.studio-note{position:fixed;left:12px;bottom:12px;z-index:5;font-size:10.5px;color:#7d89ad;font-family:ui-sans-serif,system-ui,sans-serif;pointer-events:none}
+/* Halaman cetak naskah (dipakai ekspor HTML/print) */
+@media print{
+.rail,.top,.statusbar,.toast-host,.panel__acts,.editor__bar{display:none!important}
+.kalam-root{background:#fff;color:#000}
+.panel-host{overflow:visible}
+}

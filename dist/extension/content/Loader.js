@@ -1,0 +1,1 @@
+window.__kalamLoader||(window.__kalamLoader=!0,import(chrome.runtime.getURL("content/ContentBridge.js")).catch(a=>{window.__kalamLoader=!1,console.warn("[Kalam] gagal memuat modul:",a?.message||a)}));

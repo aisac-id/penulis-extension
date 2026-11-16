@@ -1,0 +1,7 @@
+{
+  "name": "id.aisac.kalam",
+  "description": "Kalam — jembatan desktop untuk penulis buku (simpan naskah & buka folder)",
+  "path": "/REPLACE/ABSOLUTE/PATH/kalam-host.py",
+  "type": "stdio",
+  "allowed_origins": ["chrome-extension://REPLACE_EXTENSION_ID/"]
+}
