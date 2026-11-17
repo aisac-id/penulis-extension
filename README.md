@@ -6,6 +6,24 @@ Semuanya hidup di **sidebar selebar 1/4 layar di pinggir kanan** halaman yang se
 
 Dibangun mengikuti **Harness Extension Standard v1.5** (`aisac-id/harness-extension`).
 
+## Brand & visual
+
+<p align="center">
+  <img src="promo/logo.png" width="160" alt="Logo Kalam: bulu angsa emas menulis garis bercahaya dengan tetesan tinta sian di malam indigo"/>
+</p>
+
+<p align="center">
+  <img src="promo/banner.png" width="100%" alt="Banner Kalam: meja penulis di malam hari dengan lampu kuningan, tumpukan naskah, dan kartu bab"/>
+</p>
+
+<p align="center">
+  <img src="promo/software-box.png" width="420" alt="Edisi kolektor Kalam: buku kain indigo dengan emblem quil emas dan tulisan emas KALAM di punggung"/>
+</p>
+
+<p align="center">
+  <img src="promo/poster.png" width="420" alt="Poster Kalam: naskah per bab, bible tokoh &amp; riset, export EPUB / DOCX"/>
+</p>
+
 ---
 
 ## Daftar isi
